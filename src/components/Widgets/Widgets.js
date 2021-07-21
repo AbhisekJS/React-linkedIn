@@ -45,7 +45,7 @@ function Widgets() {
                 <InfoIcon/>
             </div>
             
-            {widgetData.map((data)=><NewsArticle id={data.id} heading={data.title} subtitle={data.read}/>)}
+            {widgetData.map((data)=><NewsArticle key={data.id} heading={data.title} subtitle={data.read}/>)}
             
         </div>
     )
